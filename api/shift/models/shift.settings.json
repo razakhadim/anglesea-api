@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "shifts",
+  "info": {
+    "name": "shift",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "shift_type": {
+      "type": "enumeration",
+      "enum": [
+        "Morning",
+        "Night",
+        "Weekend",
+        "Other"
+      ]
+    },
+    "shift_start_date": {
+      "type": "date"
+    },
+    "shift_end_date": {
+      "type": "date"
+    },
+    "shift_start_time": {
+      "type": "time"
+    },
+    "shift_end_time": {
+      "type": "time"
+    },
+    "shift_name": {
+      "type": "string"
+    }
+  }
+}
